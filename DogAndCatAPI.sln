@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DogAndCatAPI", "DogAndCatAPI.csproj", "{6647EEA6-152E-4BEB-8938-EA335353C34E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6647EEA6-152E-4BEB-8938-EA335353C34E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6647EEA6-152E-4BEB-8938-EA335353C34E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6647EEA6-152E-4BEB-8938-EA335353C34E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6647EEA6-152E-4BEB-8938-EA335353C34E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5BF535F3-20E9-44A2-BA9F-A880A351D535}
+	EndGlobalSection
+EndGlobal
