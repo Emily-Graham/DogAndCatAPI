@@ -95,7 +95,7 @@ namespace DogAndCatAPI
                     Console.WriteLine($"	{breed}");
                 }
                
-                Console.WriteLine($"{Environment.NewLine}Total Breeds: {list.Count}{Environment.NewLine}");
+                Console.WriteLine($"\nTotal Breeds: {list.Count}\n");
             }
         }
 
@@ -105,19 +105,19 @@ namespace DogAndCatAPI
 
             while(restart)
             {
-                Console.WriteLine("Which animal breeds would you like to see?");
-                Console.WriteLine($"Enter 0 for cats.{Environment.NewLine}Enter 1 for dogs.");
+                Console.WriteLine("Which animal breeds would you like to see?\n");
+                Console.WriteLine($"Enter {(int) Options.Cats} for cats.\nEnter {(int) Options.Dogs} for dogs.");
 
                 int userInput = Convert.ToInt32(Console.ReadLine()); //how to handle exceptions eg: userInput is 't'
 
                 if (userInput == (int)Options.Cats)
                 {
-                    Console.WriteLine($"{Environment.NewLine}Cat Breeds: {Environment.NewLine}");
+                    Console.WriteLine($"\nCat Breeds:\n");
                     Utils.displayBreeds((int)Options.Cats);
                 }
                 else if (userInput == (int)Options.Dogs)
                 {
-                    Console.WriteLine($"{Environment.NewLine}Dog Breeds: {Environment.NewLine}");
+                    Console.WriteLine($"\nDog Breeds:\n");
                     Utils.displayBreeds((int)Options.Dogs);
                 }
                 else
