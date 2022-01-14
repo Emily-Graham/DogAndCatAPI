@@ -81,19 +81,16 @@ namespace DogAndCatAPI
                 List<string> list = new List<string>();
 
                 //if statement determines if call cats/dogs
-                if(animal == 0)
+                if(animal == (int)Options.Cats)
                 {
                     list = Utils.fetchCats();
                 }
-                else if(animal == 1)
+                else if(animal == (int)Options.Dogs)
                 {
                     list = Utils.fetchDogs();
                 }
-               
-                foreach (string breed in list)
-                {
-                    Console.WriteLine($"	{breed}");
-                }
+                
+                list.ForEach(i => Console.WriteLine($"\t{i}"));
                
                 Console.WriteLine($"\nTotal Breeds: {list.Count}\n");
             }
@@ -106,7 +103,7 @@ namespace DogAndCatAPI
             while(restart)
             {
                 Console.WriteLine("Which animal breeds would you like to see?\n");
-                Console.WriteLine($"Enter {(int) Options.Cats} for cats.\nEnter {(int) Options.Dogs} for dogs.");
+                Console.WriteLine($"Enter {(int)Options.Cats} for cats.\nEnter {(int) Options.Dogs} for dogs.");
 
                 int userInput = Convert.ToInt32(Console.ReadLine()); //how to handle exceptions eg: userInput is 't'
 
@@ -126,7 +123,7 @@ namespace DogAndCatAPI
                 }
 
                 // Give user options to exit or call more results
-                Console.WriteLine("would you like to continue? Type y to continue and hit enter. Hit enter to exit.");
+                Console.WriteLine("Would you like to continue? Type y to continue and hit enter. Hit enter to exit.");
                 string userChoice = Console.ReadLine();
                 if (userChoice == "y") { restart = true; }
                 else if (userChoice != "y") { restart = false; }
